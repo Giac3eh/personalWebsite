@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giacomo Scalzotto">
+    <meta name="description" content="Work in progress to become a great Web Developer">
+    <meta HTTP-EQUIV="keywords" content="Front End Italia Italy Start2Impact Personal Website Personal Websites">
+    <meta name="dc.language" content="en">
+    <meta name="copyright" content="2024, Giacomo Scalzotto">
+    <title>Giacomo Scalzotto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon/favicon.ico">
+    <meta name="og:title" property="og:title" content="Giacomo Scalzotto Portfolio">
+    <meta name="og:type" content="website">
+    <meta property="og:title" content="Giacomo Scalzotto - Personal Site">
+    <meta name="og:description" content="Work in progress to become a great Web Developer">
+    <meta property="og:image" content="https://ibb.co/yWq8jXr">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><span>G8</span></a>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="/portfolio/index.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="home-container">
+            <div class="home">
+                <h2 class="home-text--first light">
+                    Hi, My Name Is
+                </h2>
+                <h1 class="home-name">
+                    Giacomo 
+                    <span class="home-name--last">Scalzotto</span>.
+                </h1>
+                <h2 class="home-text light">
+                    I'm an aspiring <span class="bold">Front-End Developer</span> based in 
+                    <div class="tooltip-container bold">Italy.
+                        <span class="tooltiptext">MAMMA MIA!</span>
+                    </div>
+                </h2>
+                <h2 class="home-text light">
+                    I'm currently studying the basics of developing thanks to 
+                    <span class="bold"><a href="https://www.start2impact.it" target="_blank" rel="noopener">Start2Impact</a></span>. 
+                </h2>
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <h1>About</h1>
+                <h2>8 RANDOM THINGS ABOUT ME:</h2>
+                <figure>
+                    <img src="/assets/img/profile.jpg" alt="Profile picture of me">
+                </figure>
+                <ol>
+                    <li>Our life is frittered away by detail. Simplify, simplify.</li>
+                    <li>I’m 108% addicted to Front-End Dev and to the color orange.</li>
+                    <li> I enjoy solving problems in order to create the most delightful experiences for users.</li>
+                    <li class="bold">Developer = Artist.</li>
+                    <li>According to my friends and family, I read too much.</li>
+                    <li>“Too much” is relative.</li>
+                    <li>I love to <span class="bold">work on meaningful projects</span> with inspiring, creative people.</li>
+                    <li>Deeply in love with long distance trail.</li>
+                </ol>
+            </div>
+            <div class="about-card">
+                <h2>HARD SKILLS</h2>    
+                <ul>
+                    <li>
+                        <label for="first">HTML</label>
+                        <progress class="progress" id="first" value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label for="second">CSS</label>
+                        <progress id="second" value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label for="third">BOOTSTRAP</label>
+                        <progress id="third" value="40" max="100"></progress>
+                    </li>
+                    <li>
+                        <label for="fourth">SASS</label>
+                        <progress id="fourth" value="30" max="100"></progress>
+                    </li>
+                    <li>
+                        <label for="fifth">JAVASCRIPT</label>
+                        <progress id="fifth" value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label for="fifth">GIT</label>
+                        <progress id="fifth" value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact">
+                <h1>Hello There!</h1>
+                <h2 class="light">Have a question?
+                    <br>
+                    Want to work together?
+                    <br>
+                    <span class="bold">Feel free to contact me.</span>
+                </h2>
+            </div>
+                <form id="contact-form">
+                    <label for="name">Enter Your <span class="bold">Name</span>*:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            placeholder="Name Surname"  
+                            required>
+                    <label for="email">Enter Your <span class="bold">Email</span>*:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="email@email.com"  
+                            required >
+                    <label for="message"><span class="bold">Message</span>:</label>
+                        <textarea id="message" rows="4" cols="25" placeholder=" Write here..."></textarea>
+                        <button onclick="sendmail()" type="button" class="btn">Send</button>
+                </form>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/Giac3eh" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github fa-2xl icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/giacomo-scalzotto-02616928b/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin fa-2xl icon"></i>
+            </a>
+        </div>
+        <span>
+            &copy; Copyright 2024
+        </span>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function () {
+                emailjs.init("ywyvf499JDoO1HWa5");
+            })();
+    </script>
+    <script src="https://kit.fontawesome.com/598c6d0f97.js" crossorigin="anonymous"></script>
+</body>
+</html>
